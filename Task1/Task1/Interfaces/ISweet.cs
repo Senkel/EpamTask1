@@ -8,5 +8,6 @@ namespace Task1.Interfaces
 {
     interface ISweet
     {
+        string Name { get; }
     }
 }
