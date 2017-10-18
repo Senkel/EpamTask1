@@ -13,7 +13,7 @@ namespace Task1.Classes
 
         public string Name => throw new NotImplementedException();
 
-        public ICollection<ISweet> FindSweetStuffBySugar(int min, int max)
+        public ICollection<ISweet> FindSweetBySugar(int min, int max)
         {
             throw new NotImplementedException();
         }

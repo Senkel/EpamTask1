@@ -42,9 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Caramel.cs" />
+    <Compile Include="Classes\CaramelWithFilling.cs" />
+    <Compile Include="Classes\ChocolateBar.cs" />
     <Compile Include="Classes\Gift.cs" />
     <Compile Include="Classes\Sweet.cs" />
     <Compile Include="Classes\SweetWithFilling.cs" />
+    <Compile Include="Classes\Truffle.cs" />
+    <Compile Include="Classes\TypeCaramelFilling.cs" />
     <Compile Include="Classes\TypeSweetFilling.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweet.cs" />
@@ -53,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

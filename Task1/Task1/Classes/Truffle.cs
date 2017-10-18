@@ -7,9 +7,9 @@ using Task1.Interfaces;
 
 namespace Task1.Classes
 {
-    class Sweet: ISweet
+    class Truffle : ISweet
     {
-        private const double SWEET_PRICE = 5.0;
+        private const double TRUFFLE_PRICE = 7.50;
 
         public string Name => throw new NotImplementedException();
 
@@ -19,19 +19,9 @@ namespace Task1.Classes
 
         public double Calories => throw new NotImplementedException();
 
-       
-
-        public Sweet(string name, int weight,int sugar,double calories)
+        public double GetSweetPrice()
         {
-            name = Name;
-            weight = Weight;
-            sugar = Sugar;
-            calories = Calories;
-        }
-
-        public virtual double  GetSweetPrice()
-        {
-            return SWEET_PRICE / 1000 * Weight;
+            return TRUFFLE_PRICE / 1000 * Weight;
         }
     }
 }

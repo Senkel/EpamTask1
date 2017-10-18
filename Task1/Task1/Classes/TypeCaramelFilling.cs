@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes
 {
-    enum TypeSweetFilling
+    enum TypeCaramelFilling
     {
-        Nut, Fruit, IrishCream, Toffy
+        Cherry,Strawberry,Limon,Milk
     }
 }

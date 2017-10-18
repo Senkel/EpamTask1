@@ -9,7 +9,7 @@ namespace Task1.Interfaces
     interface IGift
     {
         ICollection<ISweet> Items { get; }
-        ICollection<ISweet> FindSweetStuffBySugar(int min, int max);
+        ICollection<ISweet> FindSweetBySugar(int min, int max);
         string Name { get; }
         double GetWeight();
         void SortByWeight();
