@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Gift.cs" />
     <Compile Include="Classes\Sweet.cs" />
     <Compile Include="Classes\SweetWithFilling.cs" />
     <Compile Include="Classes\TypeSweetFilling.cs" />
+    <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
