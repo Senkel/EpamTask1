@@ -13,15 +13,15 @@ namespace Task1.Classes
 
         public string Name => throw new NotImplementedException();
 
-        public int Weight => throw new NotImplementedException();
+        public double Weight => throw new NotImplementedException();
 
-        public int Sugar => throw new NotImplementedException();
+        public double Sugar => throw new NotImplementedException();
 
         public double Calories => throw new NotImplementedException();
 
        
 
-        public Sweet(string name, int weight,int sugar,double calories)
+        public Sweet(string name, double weight, double sugar,double calories)
         {
             name = Name;
             weight = Weight;

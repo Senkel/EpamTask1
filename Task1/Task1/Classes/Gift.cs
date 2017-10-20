@@ -9,28 +9,60 @@ namespace Task1.Classes
 {
     class Gift : IGift
     {
-        public ICollection<ISweet> Items => throw new NotImplementedException();
+        public ICollection<ISweet> Items
+        {
+            get;
+            private set;
+        }
 
-        public string Name => throw new NotImplementedException();
+        public string Name
+        {
+            get;
+            protected set;
+        }
 
         public ICollection<ISweet> FindSweetBySugar(int min, int max)
         {
-            throw new NotImplementedException();
+            if (Items != null)
+            {
+                return Items.Where(x => (x.Sugar >= min) && (x.Sugar <= max)).ToList();
+            }
+            else
+            {
+                throw new InvalidOperationException("Something went wrong");
+            }
         }
 
         public double GetGiftPrice()
         {
-            throw new NotImplementedException();
+            if (Items != null)
+            {
+                return Items.Sum(x => x.GetSweetPrice());
+            }else
+            {
+                throw new InvalidOperationException("Something went wrong");
+            }
         }
 
         public double GetWeight()
         {
-            throw new NotImplementedException();
+            if (Items != null)
+            {
+                return Items.Sum(x => x.Weight);
+            }else
+            {
+                throw new InvalidOperationException("Something went wrong");
+            }
         }
 
         public void SortByWeight()
         {
-            throw new NotImplementedException();
+            var temp = Items.OrderBy(x => x.Weight).ToList();
+            Items.Clear();
+            foreach (var item in temp)
+            {
+                Items.Add(item);
+            }
         }
     }
 }

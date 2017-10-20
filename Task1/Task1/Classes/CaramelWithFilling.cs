@@ -18,7 +18,7 @@ namespace Task1.Classes
             return CARAMELWITHFILLING_PRICE / 1000 * Weight;
 
         }
-        public CaramelWithFilling(string name, int weight, int sugar, double calories, TypeCaramelFilling type) : base(name, weight, sugar, calories)
+        public CaramelWithFilling(string name, double weight, double sugar, double calories, TypeCaramelFilling type) : base(name, weight, sugar, calories)
         {
             type = Type;
         }

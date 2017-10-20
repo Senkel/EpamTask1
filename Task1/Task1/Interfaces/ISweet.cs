@@ -11,8 +11,8 @@ namespace Task1.Interfaces
     {
         
         string Name { get; }
-        int Weight { get; }
-        int Sugar { get; }
+        double Weight { get; }
+        double Sugar { get; }
         double Calories { get; }
         double GetSweetPrice();
     }

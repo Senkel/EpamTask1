@@ -16,7 +16,7 @@ namespace Task1.Classes
         {
             return SWEETWITHFILLING_PRICE / 1000 * Weight;
         }
-        public SweetWithFilling(string name, int weight, int sugar, double calories,TypeSweetFilling type) : base(name, weight, sugar, calories)
+        public SweetWithFilling(string name, double weight, double sugar, double calories,TypeSweetFilling type) : base(name, weight, sugar, calories)
         {
             Type = type;
         }
