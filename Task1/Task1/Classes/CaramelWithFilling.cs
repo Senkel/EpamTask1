@@ -9,13 +9,13 @@ namespace Task1.Classes
     class CaramelWithFilling : Caramel
     {
 
-        private const double CARAMELWITHFILLING_PRICE = 4.50;
+        private const double CARAMELWITHFILLING_PRICE = 0.0045;
 
         TypeCaramelFilling Type;
 
         public override double GetSweetPrice()
         {
-            return CARAMELWITHFILLING_PRICE / 1000 * Weight;
+            return CARAMELWITHFILLING_PRICE * Weight;
 
         }
         public CaramelWithFilling(string name, double weight, double sugar, double calories, TypeCaramelFilling type) : base(name, weight, sugar, calories)

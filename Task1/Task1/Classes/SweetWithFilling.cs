@@ -8,13 +8,13 @@ namespace Task1.Classes
 {
     class SweetWithFilling : Sweet
     {
-        private const double SWEETWITHFILLING_PRICE = 5.5;
+        private const double SWEETWITHFILLING_PRICE = 0.0055;
 
         TypeSweetFilling Type;
 
         public override double GetSweetPrice()
         {
-            return SWEETWITHFILLING_PRICE / 1000 * Weight;
+            return SWEETWITHFILLING_PRICE * Weight;
         }
         public SweetWithFilling(string name, double weight, double sugar, double calories,TypeSweetFilling type) : base(name, weight, sugar, calories)
         {

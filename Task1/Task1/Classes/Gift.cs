@@ -9,6 +9,7 @@ namespace Task1.Classes
 {
     class Gift : IGift
     {
+        
         public ICollection<ISweet> Items
         {
             get;
@@ -26,13 +27,25 @@ namespace Task1.Classes
             if (Items != null)
             {
                 return Items.Where(x => (x.Sugar >= min) && (x.Sugar <= max)).ToList();
+
             }
             else
             {
                 throw new InvalidOperationException("Something went wrong");
             }
         }
-
+        public void Add(ISweet s)
+        {
+            Items.Add(s);
+        }
+        public void Remove(ISweet s)
+        {
+            Items.Remove(s);
+        }
+        public Gift()
+        {
+            Items = new List<ISweet>();
+        }
         public double GetGiftPrice()
         {
             if (Items != null)

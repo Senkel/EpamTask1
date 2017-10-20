@@ -9,7 +9,7 @@ namespace Task1.Classes
 {
     class ChocolateBar : ISweet
     {
-        private const double CHOCOLATEBAR_PRICE = 5.50;
+        private const double CHOCOLATEBAR_PRICE = 0.0055;
 
         public string Name => throw new NotImplementedException();
 
@@ -21,7 +21,7 @@ namespace Task1.Classes
 
         public double GetSweetPrice()
         {
-            return CHOCOLATEBAR_PRICE / 1000 * Weight;
+            return CHOCOLATEBAR_PRICE  * Weight;
         }
     }
 }

@@ -9,15 +9,31 @@ namespace Task1.Classes
 {
     class Caramel : ISweet
     {
-        private const double CARAMEL_PRICE = 4.20;
+        private const double CARAMEL_PRICE = 0.004;
 
-        public string Name => throw new NotImplementedException();
+        public string Name
+        {
+            get;
+            protected set;
+        }
+        
+        public double Weight
+        {
+            get;
+            protected set;
+        }
 
-        public double Weight => throw new NotImplementedException();
+        public double Sugar
+        {
+            get;
+            protected set;
+        }
 
-        public double Sugar => throw new NotImplementedException();
-
-        public double Calories => throw new NotImplementedException();
+        public double Calories
+        {
+            get;
+            protected set;
+        }
 
         public Caramel(string name , double weight , double sugar, double calories)
         {
@@ -29,7 +45,7 @@ namespace Task1.Classes
 
         public virtual double GetSweetPrice()
         {
-            return CARAMEL_PRICE / 1000 * Weight;
+            return CARAMEL_PRICE  * Weight;
         }
     }
 }
