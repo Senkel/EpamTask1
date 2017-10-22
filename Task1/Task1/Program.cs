@@ -36,8 +36,7 @@ namespace Task1
             Console.WriteLine("_______________________________");
             Console.WriteLine("Find sweet by sugar: ");
             gift.FindSweetBySugar(52, 57);
-            Console.WriteLine("_______________________________");
-            gift.GetGiftPrice();
+            
             
             
             Console.ReadLine();
