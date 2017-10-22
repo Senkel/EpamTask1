@@ -42,10 +42,10 @@ namespace Task1.Classes
 
         public Sweet(string name, double weight, double sugar,double calories)
         {
-            name = Name;
-            weight = Weight;
-            sugar = Sugar;
-            calories = Calories;
+            Name = name;
+            Weight = weight;
+            Sugar = sugar;
+            Calories = calories;
         }
 
         public virtual double  GetSweetPrice()

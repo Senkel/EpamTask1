@@ -70,12 +70,14 @@ namespace Task1.Classes
 
         public void SortByWeight()
         {
-            var temp = Items.OrderBy(x => x.Weight).ToList();
-            Items.Clear();
-            foreach (var item in temp)
+            var search = from item in Items
+                         orderby item.Weight
+                         select item;
+            foreach (var i in search)
             {
-                Items.Add(item);
+                Console.WriteLine((i.Name + "\t" + i.Weight).ToString());
             }
+           
         }
     }
 }

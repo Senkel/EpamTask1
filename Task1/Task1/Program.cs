@@ -11,10 +11,10 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Sweet sweet = new Sweet("Alenka", 100, 51, 520);//100 g
-            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 100, 56, 540, TypeSweetFilling.Nut);
-            Caramel caramel = new Caramel("Chupa-Chups",100,55,440);
-            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",100,59,490,TypeCaramelFilling.Strawberry);
+            Sweet sweet = new Sweet("Alenka", 110, 51, 520);//100 g
+            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 98, 56, 540, TypeSweetFilling.Nut);
+            Caramel caramel = new Caramel("Chupa-Chups",120,55,440);
+            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",140,59,490,TypeCaramelFilling.Strawberry);
 
             Gift gift = new Gift();
 
@@ -23,10 +23,11 @@ namespace Task1
             gift.Add(caramel);
             gift.Add(caramelwf);
 
-            gift.ShowPrice();
+            gift.SortByWeight();
+            gift.GetGiftPrice();
             gift.FindSweetBySugar(52,57);
             gift.GetWeight();
-            gift.SortByWeight();
+           
 
             Console.ReadLine();
         }

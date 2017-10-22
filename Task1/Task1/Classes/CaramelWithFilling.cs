@@ -20,7 +20,7 @@ namespace Task1.Classes
         }
         public CaramelWithFilling(string name, double weight, double sugar, double calories, TypeCaramelFilling type) : base(name, weight, sugar, calories)
         {
-            type = Type;
+            Type = type;
         }
     }
 }
