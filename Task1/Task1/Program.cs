@@ -22,13 +22,24 @@ namespace Task1
             gift.Add(sweetwf);
             gift.Add(caramel);
             gift.Add(caramelwf);
+            gift.Remove(sweet);
+            gift.Add(sweet);
 
-            gift.SortByWeight();
+            Console.Write("Gift price is (rubles) :");
             gift.GetGiftPrice();
-            gift.FindSweetBySugar(52,57);
-            gift.GetWeight();
-           
-
+            Console.WriteLine("_______________________________");
+            Console.Write("Total weight of gift is (gramm) : ");
+            gift.GetWeight(); 
+            Console.WriteLine("_______________________________");
+            Console.WriteLine("Sort by weight: ");
+            gift.SortByWeight();
+            Console.WriteLine("_______________________________");
+            Console.WriteLine("Find sweet by sugar: ");
+            gift.FindSweetBySugar(52, 57);
+            Console.WriteLine("_______________________________");
+            gift.GetGiftPrice();
+            
+            
             Console.ReadLine();
         }
     }

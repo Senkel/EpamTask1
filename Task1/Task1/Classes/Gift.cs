@@ -9,7 +9,11 @@ namespace Task1.Classes
 {
     class Gift : IGift
     {
-        
+        public Gift()
+        {
+            Items = new List<ISweet>();
+        }
+
         public ICollection<ISweet> Items
         {
             get;
@@ -22,51 +26,56 @@ namespace Task1.Classes
             protected set;
         }
 
-        public ICollection<ISweet> FindSweetBySugar(int min, int max)
+        public void FindSweetBySugar(int min, int max)
         {
-            if (Items != null)
+            var search = from item in Items
+                         orderby item.Sugar
+                         where item.Sugar >= min
+                         where item.Sugar <= max
+                         select item;
+            foreach (var i in search)
             {
-                return Items.Where(x => (x.Sugar >= min) && (x.Sugar <= max)).ToList();
-
+                Console.WriteLine((i.Name + "\t" + i.Sugar).ToString());
             }
-            else
-            {
-                throw new InvalidOperationException("Something went wrong");
-            }
+            
         }
+
         public void Add(ISweet s)
         {
             Items.Add(s);
         }
+
         public void Remove(ISweet s)
         {
             Items.Remove(s);
         }
-        public Gift()
-        {
-            Items = new List<ISweet>();
-        }
+        
         public double GetGiftPrice()
         {
-            if (Items != null)
+            double TotalPrice = 0;
+            var search = from item in Items
+                         select item;
+            foreach (var i in search)
             {
-                return Items.Sum(x => x.GetSweetPrice());
-            }else
-            {
-                throw new InvalidOperationException("Something went wrong");
+                TotalPrice += i.GetSweetPrice();
             }
+            Console.WriteLine(TotalPrice);
+            return TotalPrice;
         }
 
         public double GetWeight()
         {
-            if (Items != null)
+            double TotalWeight = 0;
+            var search = from item in Items
+                         select item;
+            foreach (var i in search)
             {
-                return Items.Sum(x => x.Weight);
-            }else
-            {
-                throw new InvalidOperationException("Something went wrong");
+                TotalWeight += i.Weight;
             }
+            Console.WriteLine(TotalWeight);
+            return TotalWeight;
         }
+    
 
         public void SortByWeight()
         {

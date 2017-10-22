@@ -24,9 +24,9 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Task1.Classes.Gift" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Position X="5.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAACAAgCCAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAIAAAAACAAgCCAAAAAABAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Gift.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -34,7 +34,7 @@
   <Class Name="Task1.Classes.Sweet" Collapsed="true">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAAAAIAAAAAAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>IAAAAAAAIIAAAAAAAAAAAAQAACAAAAAAAAAAAAAAIAA=</HashCode>
       <FileName>Classes\Sweet.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -42,7 +42,7 @@
   <Class Name="Task1.Classes.SweetWithFilling" Collapsed="true">
     <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Classes\SweetWithFilling.cs</FileName>
     </TypeIdentifier>
   </Class>

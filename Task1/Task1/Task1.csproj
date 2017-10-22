@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculate.cs" />
     <Compile Include="Classes\Caramel.cs" />
     <Compile Include="Classes\CaramelWithFilling.cs" />
     <Compile Include="Classes\ChocolateBar.cs" />
