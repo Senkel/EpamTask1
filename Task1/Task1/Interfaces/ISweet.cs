@@ -16,4 +16,4 @@ namespace Task1.Interfaces
         double Calories { get; }
         double GetSweetPrice();
     }
-}
+}//final commit

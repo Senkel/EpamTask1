@@ -24,4 +24,4 @@ namespace Task1.Classes
             return CHOCOLATEBAR_PRICE  * Weight;
         }
     }
-}
+}//final commit

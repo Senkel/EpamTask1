@@ -23,4 +23,4 @@ namespace Task1.Classes
             Type = type;
         }
     }
-}
+}//final commit

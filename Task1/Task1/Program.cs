@@ -27,13 +27,13 @@ namespace Task1
 
             Console.Write("Gift price is (rubles) :");
             gift.GetGiftPrice();
-            Console.WriteLine("_______________________________");
+            Console.WriteLine("______________________________________");
             Console.Write("Total weight of gift is (gramm) : ");
             gift.GetWeight(); 
-            Console.WriteLine("_______________________________");
+            Console.WriteLine("______________________________________");
             Console.WriteLine("Sort by weight: ");
             gift.SortByWeight();
-            Console.WriteLine("_______________________________");
+            Console.WriteLine("______________________________________");
             Console.WriteLine("Find sweet by sugar: ");
             gift.FindSweetBySugar(52, 57);
             
@@ -42,4 +42,4 @@ namespace Task1
             Console.ReadLine();
         }
     }
-}
+}//final commit

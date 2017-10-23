@@ -53,4 +53,4 @@ namespace Task1.Classes
             return SWEET_PRICE * Weight;
         }
     }
-}
+}//final commit

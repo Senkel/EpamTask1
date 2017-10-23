@@ -48,4 +48,4 @@ namespace Task1.Classes
             return CARAMEL_PRICE  * Weight;
         }
     }
-}
+}//final commit

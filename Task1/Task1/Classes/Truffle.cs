@@ -24,4 +24,4 @@ namespace Task1.Classes
             return TRUFFLE_PRICE  * Weight;
         }
     }
-}
+}//final commit

@@ -15,4 +15,4 @@ namespace Task1.Interfaces
         void SortByWeight();
         double GetGiftPrice();
     }
-}
+}//final commit
