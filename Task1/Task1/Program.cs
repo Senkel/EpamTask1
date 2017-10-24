@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Task1.Classes;
+using Task1.Interfaces;
 
 namespace Task1
 {
@@ -11,19 +12,24 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Sweet sweet = new Sweet("Alenka", 110, 51, 520);//100 g
-            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 98, 56, 540, TypeSweetFilling.Nut);
+            Sweet sweet = new Sweet("Alenka", 110, 51, 520);
+            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 98, 56, 540,"Nut",0.001);
             Caramel caramel = new Caramel("Chupa-Chups",120,55,440);
-            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",140,59,490,TypeCaramelFilling.Strawberry);
+            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",140,59,490,"Milk",0.0005);
+            ChocolateBar chocolateBar = new ChocolateBar("Spartak",150,66,550);
+            Truffle truffle = new Truffle("Golden night",100,54,500,"Nut",0.001);
 
-            Gift gift = new Gift();
 
-            gift.Add(sweet);
-            gift.Add(sweetwf);
-            gift.Add(caramel);
-            gift.Add(caramelwf);
-            gift.Remove(sweet);
-            gift.Add(sweet);
+            Gift gift = new Gift("Christmas Gift",new List<ISweet>());
+
+            gift.AddSweet(sweet);
+            gift.AddSweet(sweetwf);
+            gift.AddSweet(caramel);
+            gift.AddSweet(truffle);
+            gift.AddSweet(chocolateBar);
+            gift.AddSweet(caramelwf);
+            gift.RemoveSweet(sweet);
+            gift.AddSweet(sweet);
 
             Console.Write("Gift price is (rubles) :");
             gift.GetGiftPrice();
@@ -36,10 +42,10 @@ namespace Task1
             Console.WriteLine("______________________________________");
             Console.WriteLine("Find sweet by sugar: ");
             gift.FindSweetBySugar(52, 57);
-            
-            
+
+
             
             Console.ReadLine();
         }
     }
-}//final commit
+}

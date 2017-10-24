@@ -49,10 +49,9 @@
     <Compile Include="Classes\Sweet.cs" />
     <Compile Include="Classes\SweetWithFilling.cs" />
     <Compile Include="Classes\Truffle.cs" />
-    <Compile Include="Classes\TypeCaramelFilling.cs" />
-    <Compile Include="Classes\TypeSweetFilling.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\ISweet.cs" />
+    <Compile Include="Interfaces\ISweetFilling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -31,7 +31,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Task1.Classes.Sweet" Collapsed="true">
+  <Class Name="Task1.Classes.Sweet">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAIIAAAAAAAAAAAAQAACAAAAAAAAAAAAAAIAA=</HashCode>
@@ -39,8 +39,8 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Task1.Classes.SweetWithFilling" Collapsed="true">
-    <Position X="3" Y="1.75" Width="1.5" />
+  <Class Name="Task1.Classes.SweetWithFilling">
+    <Position X="3" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Classes\SweetWithFilling.cs</FileName>
@@ -55,7 +55,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="Task1.Interfaces.IGift" Collapsed="true">
-    <Position X="4.25" Y="2.75" Width="1.5" />
+    <Position X="4.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAACAAgCCAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IGift.cs</FileName>

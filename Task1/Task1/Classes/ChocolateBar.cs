@@ -11,17 +11,25 @@ namespace Task1.Classes
     {
         private const double CHOCOLATEBAR_PRICE = 0.0055;
 
-        public string Name => throw new NotImplementedException();
+        public ChocolateBar(string name,double weight,double sugar,double calories)
+        {
+            Name = name;
+            Weight = weight;
+            Sugar = sugar;
+            Calories = calories;
+        }
 
-        public double Weight => throw new NotImplementedException();
+        public string Name { get; protected set; }
 
-        public double Sugar => throw new NotImplementedException();
+        public double Weight { get; protected set; }
 
-        public double Calories => throw new NotImplementedException();
+        public double Sugar { get; protected set; }
+
+        public double Calories { get; protected set; }
 
         public double GetSweetPrice()
         {
             return CHOCOLATEBAR_PRICE  * Weight;
         }
     }
-}//final commit
+}

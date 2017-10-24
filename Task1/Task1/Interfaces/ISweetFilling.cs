@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task1.Classes
+namespace Task1.Interfaces
 {
-    enum TypeCaramelFilling
+    interface ISweetFilling
     {
-        Cherry,Strawberry,Limon,Milk
+        string Filling { get; }
+        double FillingPrice { get; }
     }
-}//final commit
+}

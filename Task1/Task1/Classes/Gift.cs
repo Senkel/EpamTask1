@@ -9,9 +9,10 @@ namespace Task1.Classes
 {
     class Gift : IGift
     {
-        public Gift()
+        public Gift(string name,ICollection<ISweet> items)
         {
-            Items = new List<ISweet>();
+            Name = name;
+            Items = items;
         }
 
         public ICollection<ISweet> Items
@@ -40,40 +41,24 @@ namespace Task1.Classes
             
         }
 
-        public void Add(ISweet s)
+        public void AddSweet(ISweet s)
         {
             Items.Add(s);
         }
 
-        public void Remove(ISweet s)
+        public void RemoveSweet(ISweet s)
         {
             Items.Remove(s);
         }
         
         public double GetGiftPrice()
         {
-            double TotalPrice = 0;
-            var search = from item in Items
-                         select item;
-            foreach (var i in search)
-            {
-                TotalPrice += i.GetSweetPrice();
-            }
-            Console.WriteLine(TotalPrice);
-            return TotalPrice;
+            return Items.Sum(x=>x.GetSweetPrice());
         }
 
         public double GetWeight()
         {
-            double TotalWeight = 0;
-            var search = from item in Items
-                         select item;
-            foreach (var i in search)
-            {
-                TotalWeight += i.Weight;
-            }
-            Console.WriteLine(TotalWeight);
-            return TotalWeight;
+            return Items.Sum(x => x.Weight);
         }
     
 
@@ -89,4 +74,4 @@ namespace Task1.Classes
            
         }
     }
-}//final commit
+}
