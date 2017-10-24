@@ -35,7 +35,7 @@ namespace Task1.Classes
 
         public double GetSweetPrice()
         {
-            return TRUFFLE_PRICE  * Weight;
+            return (TRUFFLE_PRICE  * Weight)+FillingPrice;
         }
     }
 }
