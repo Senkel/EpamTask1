@@ -12,12 +12,12 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Sweet sweet = new Sweet("Alenka", 110, 51, 520);
-            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 98, 56, 540,"Nut",0.001);
-            Caramel caramel = new Caramel("Chupa-Chups",120,55,440);
-            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",140,59,490,"Milk",0.0005);
-            ChocolateBar chocolateBar = new ChocolateBar("Spartak",150,66,550);
-            Truffle truffle = new Truffle("Golden night",100,54,500,"Nut",0.001);
+            Sweet sweet = new Sweet("Alenka", 450, 51, 520);
+            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 500, 56, 540,"Nut",0.01);
+            Caramel caramel = new Caramel("Chupa-Chups",440,55,440);
+            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",510,59,490,"Milk",0.05);
+            ChocolateBar chocolateBar = new ChocolateBar("Spartak",550,66,550);
+            Truffle truffle = new Truffle("Golden night",350,54,500,"Nut",0.01);
 
 
             Gift gift = new Gift("Christmas Gift",new List<ISweet>());
@@ -31,20 +31,27 @@ namespace Task1
             gift.RemoveSweet(sweet);
             gift.AddSweet(sweet);
 
-            Console.Write("Gift price is (rubles) :");
-            gift.GetGiftPrice();
+            
+            Console.WriteLine("Gift price is (rubles): {0,13}",gift.GetGiftPrice());
             Console.WriteLine("______________________________________");
-            Console.Write("Total weight of gift is (gramm) : ");
-            gift.GetWeight(); 
+            
+            Console.WriteLine("Total weight of gift is (gramm): {0} ",gift.GetWeight()); 
             Console.WriteLine("______________________________________");
-            Console.WriteLine("Sort by weight: ");
-            gift.SortByWeight();
+
+            Console.WriteLine("Sort by weight:");
+            foreach (var i in gift.SortByWeight())
+            {
+                Console.WriteLine("{0,20} \t {1,10}", i.Name,i.Weight);
+            }
             Console.WriteLine("______________________________________");
             Console.WriteLine("Find sweet by sugar: ");
-            gift.FindSweetBySugar(52, 57);
-
-
             
+            foreach (var i in gift.FindSweetBySugar(52, 57))
+            {
+                Console.WriteLine("{0,25} \t {1,2}",i.Name ,i.Sugar);
+            }
+
+
             Console.ReadLine();
         }
     }

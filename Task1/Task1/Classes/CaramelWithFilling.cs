@@ -10,7 +10,7 @@ namespace Task1.Classes
     class CaramelWithFilling : Caramel,ISweetFilling
     {
 
-        private const double CARAMELWITHFILLING_PRICE = 0.0045;
+        private const double CARAMELWITHFILLING_PRICE = 0.045;
 
         public string Filling { get; protected set; }
 

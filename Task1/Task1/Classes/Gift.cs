@@ -27,18 +27,15 @@ namespace Task1.Classes
             protected set;
         }
 
-        public void FindSweetBySugar(int min, int max)
+        public ICollection<ISweet> FindSweetBySugar(int min, int max)
         {
             var search = from item in Items
                          orderby item.Sugar
                          where item.Sugar >= min
                          where item.Sugar <= max
                          select item;
-            foreach (var i in search)
-            {
-                Console.WriteLine((i.Name + "\t" + i.Sugar).ToString());
-            }
             
+            return search.ToArray();
         }
 
         public void AddSweet(ISweet s)
@@ -62,16 +59,13 @@ namespace Task1.Classes
         }
     
 
-        public void SortByWeight()
+        public ICollection <ISweet> SortByWeight()
         {
             var search = from item in Items
                          orderby item.Weight
-                         select item;
-            foreach (var i in search)
-            {
-                Console.WriteLine((i.Name + "\t" + i.Weight).ToString());
-            }
+                         select  item;
            
+            return search.ToArray();
         }
     }
 }

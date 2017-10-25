@@ -9,7 +9,7 @@ namespace Task1.Classes
 {
     class Truffle : ISweet, ISweetFilling
     {
-        private const double TRUFFLE_PRICE = 0.0075;
+        private const double TRUFFLE_PRICE = 0.075;
 
         public Truffle(string name, double weight, double sugar, double calories, string filling, double fillingPrice)
         {

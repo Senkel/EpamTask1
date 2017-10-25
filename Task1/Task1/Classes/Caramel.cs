@@ -9,7 +9,7 @@ namespace Task1.Classes
 {
     class Caramel : ISweet
     {
-        private const double CARAMEL_PRICE = 0.004;
+        private const double CARAMEL_PRICE = 0.04;
 
         public string Name
         {
