@@ -51,6 +51,7 @@ namespace Task1
                 Console.WriteLine("{0,25} \t {1,2}",i.Name ,i.Sugar);
             }
 
+            gift.SortByWeight().Add(new Sweet("", 1, 1, 1));
 
             Console.ReadLine();
         }

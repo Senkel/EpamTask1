@@ -11,9 +11,10 @@
   <Class Name="Task1.Classes.CaramelWithFilling" Collapsed="true">
     <Position X="6" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAABAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AgACAAAAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\CaramelWithFilling.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Task1.Classes.ChocolateBar" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="8.5" Y="0.5" Width="1.5" />
@@ -26,12 +27,12 @@
   <Class Name="Task1.Classes.Gift" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="5.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAIAAAAACAAgCCAAAAAABAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAAAAAAACAAgCCAAAAAAAAQAAAAAAIAAAAAAEAAAAAA=</HashCode>
       <FileName>Classes\Gift.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Task1.Classes.Sweet">
+  <Class Name="Task1.Classes.Sweet" Collapsed="true">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAIIAAAAAAAAAAAAQAACAAAAAAAAAAAAAAIAA=</HashCode>
@@ -39,23 +40,24 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Task1.Classes.SweetWithFilling">
-    <Position X="3" Y="3.75" Width="1.5" />
+  <Class Name="Task1.Classes.SweetWithFilling" Collapsed="true">
+    <Position X="3.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AgACAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\SweetWithFilling.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Task1.Classes.Truffle" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="8.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAAAIIAAAAAAAAAAAAQAACAAAAAAAAEAAAAAAAA=</HashCode>
+      <HashCode>IgACAAAAIIAAAAAAAAAAAAQAACAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Classes\Truffle.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="Task1.Interfaces.IGift" Collapsed="true">
-    <Position X="4.5" Y="1" Width="1.5" />
+    <Position X="8.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAACAAgCCAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IGift.cs</FileName>
@@ -68,19 +70,12 @@
       <FileName>Interfaces\ISweet.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="Task1.Classes.TypeCaramelFilling" Collapsed="true">
-    <Position X="8.5" Y="2.75" Width="1.5" />
+  <Interface Name="Task1.Interfaces.ISweetFilling" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAIA=</HashCode>
-      <FileName>Classes\TypeCaramelFilling.cs</FileName>
+      <HashCode>AgACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISweetFilling.cs</FileName>
     </TypeIdentifier>
-  </Enum>
-  <Enum Name="Task1.Classes.TypeSweetFilling" Collapsed="true">
-    <Position X="10.25" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IAAAAgAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\TypeSweetFilling.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
