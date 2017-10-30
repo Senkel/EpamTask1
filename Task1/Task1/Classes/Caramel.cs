@@ -9,14 +9,12 @@ namespace Task1.Classes
 {
     class Caramel : ISweet
     {
-        private const double CARAMEL_PRICE = 0.04;
-
         public string Name
         {
             get;
             protected set;
         }
-        
+
         public double Weight
         {
             get;
@@ -35,8 +33,11 @@ namespace Task1.Classes
             protected set;
         }
 
-        public Caramel(string name , double weight , double sugar, double calories)
+        public double SweetPrice { get; protected set; }
+
+        public Caramel(string name, double weight, double sugar, double calories,double sweetprice)
         {
+            SweetPrice = sweetprice;
             Name = name;
             Weight = weight;
             Sugar = sugar;
@@ -45,7 +46,7 @@ namespace Task1.Classes
 
         public virtual double GetSweetPrice()
         {
-            return CARAMEL_PRICE  * Weight;
+            return SweetPrice * Weight;
         }
     }
 }

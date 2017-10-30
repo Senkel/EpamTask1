@@ -9,7 +9,7 @@ namespace Task1.Classes
 {
     class Gift : IGift
     {
-        public Gift(string name,ICollection<ISweet> items)
+        public Gift(string name, ICollection<ISweet> items)
         {
             Name = name;
             Items = items;
@@ -29,12 +29,8 @@ namespace Task1.Classes
 
         public IEnumerable<ISweet> FindSweetBySugar(int min, int max)
         {
-            var search = from item in Items
-                         orderby item.Sugar
-                         where item.Sugar >= min
-                         where item.Sugar <= max
-                         select item;
-            return search.ToArray();
+            return Items.Where(x => x.Sugar >= min && x.Sugar <= max).OrderBy(x => x.Sugar);
+
 
         }
 
@@ -47,27 +43,23 @@ namespace Task1.Classes
         {
             Items.Remove(s);
         }
-        
+
         public double GetGiftPrice()
         {
-            return Items.Sum(x=>x.GetSweetPrice());
+            return Items.Sum(x => x.GetSweetPrice());
         }
 
         public double GetWeight()
         {
             return Items.Sum(x => x.Weight);
         }
-    
-
+        
         public IEnumerable<ISweet> SortByWeight()
         {
-            var search = from item in Items
-                         orderby item.Weight
-                         select item;
+            return Items.OrderBy(x => x.Weight);
 
-            return search.ToArray();
         }
 
-        
+
     }
 }

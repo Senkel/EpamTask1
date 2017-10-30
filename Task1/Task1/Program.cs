@@ -12,12 +12,12 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Sweet sweet = new Sweet("Alenka", 450, 51, 520);
-            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 500, 56, 540,"Nut",0.01);
-            Caramel caramel = new Caramel("Chupa-Chups",440,55,440);
-            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",510,59,490,"Milk",0.05);
-            ChocolateBar chocolateBar = new ChocolateBar("Spartak",550,66,550);
-            Truffle truffle = new Truffle("Golden night",350,54,500,"Nut",0.01);
+            Sweet sweet = new Sweet("Alenka", 450, 51, 520,0.45);
+            SweetWithFilling sweetwf = new SweetWithFilling("Grilling", 500, 56, 540,0.5,"Nut",0.01);
+            Caramel caramel = new Caramel("Chupa-Chups",440,55,440,0.52);
+            CaramelWithFilling caramelwf = new CaramelWithFilling("Korovka",510,59,490,"Milk",0.05,0.55);
+            ChocolateBar chocolateBar = new ChocolateBar("Spartak",550,66,550,0.55);
+            Truffle truffle = new Truffle("Golden night",350,54,500,0.5,"Nut",0.01);
 
 
             Gift gift = new Gift("Christmas Gift",new List<ISweet>());

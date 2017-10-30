@@ -7,10 +7,8 @@ using Task1.Interfaces;
 
 namespace Task1.Classes
 {
-    class CaramelWithFilling : Caramel,ISweetFilling
+    class CaramelWithFilling : Caramel, ISweetFilling
     {
-
-        private const double CARAMELWITHFILLING_PRICE = 0.045;
 
         public string Filling { get; protected set; }
 
@@ -18,11 +16,12 @@ namespace Task1.Classes
 
         public override double GetSweetPrice()
         {
-            return (CARAMELWITHFILLING_PRICE * Weight)+FillingPrice;
+            return (SweetPrice * Weight) + FillingPrice;
 
         }
-        public CaramelWithFilling(string name, double weight, double sugar, double calories, string filling,double fillingPrice ) : base(name, weight, sugar, calories)
+        public CaramelWithFilling(string name, double weight, double sugar, double calories, string filling, double fillingPrice,double sweetprice) : base(name, weight, sugar, calories,sweetprice)
         {
+           
             Filling = filling;
             FillingPrice = fillingPrice;
         }
